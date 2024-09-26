@@ -1,6 +1,8 @@
 import { Component } from "react";
 import JSConfetti from "js-confetti";
 
+import styles from "./WhatsWord.module.css";
+
 export default class WhatsWord extends Component {
 
     constructor(props) {
@@ -86,7 +88,7 @@ export default class WhatsWord extends Component {
                     letterHits: [...this.state.letterHits, ...letter], 
                     positionHits: [...this.state.positionHits, ...positions]
                 }, () => {
-                    // console.log(this.state.positionHits, this.state.letterHits);    
+                    console.log(this.state.chances, this.state.errors);    
                 });
 
                 
@@ -110,6 +112,8 @@ export default class WhatsWord extends Component {
             this.setState({
                 gameEnded: true, 
                 win: true
+            }, () => {
+                console.log(this.state.positionHits);
             });
 
             this.confettiEffect();                    
@@ -121,21 +125,23 @@ export default class WhatsWord extends Component {
             this.setState({
                 gameEnded: true, 
                 win: false
+            }, () => {
+                console.log(this.state.chances, this.state.errors);
             });           
         }        
     }
 
-    confettiEffect = () => {
+    async showConffeti() {
         const jsConfetti = new JSConfetti();
-        jsConfetti.addConfetti({
-                emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
-                emojiSize: 40,
-                confettiNumber: 150,
-                confettiRadius: 6          
-            });                         
+        await jsConfetti.addConfetti();
+        for(let i = 0; i < 5; i++) {            
+            await setTimeout(this.showConffeti, 700);
+        }
     }
 
-         
+    confettiEffect = async () => {
+        await this.showConffeti();                    
+    }
 
     render() {
         return (
@@ -144,7 +150,7 @@ export default class WhatsWord extends Component {
                     <h1>WhatsWord</h1>
                     { this.state.gameStarted === false && ( 
                         <div className="col-12">                        
-                            <div className="alert alert-info mx-3 my-3" role="alert">
+                            <div className="alert alert-dark bg-dark text-light mx-3 my-3" role="alert">
                                 <p>O jogo consistem em acertar a palavra da dica</p>
                                 <p>Será indicada uma categoria como pista ...</p>
                                 <p>Voce tem 5 chances</p>
@@ -162,7 +168,7 @@ export default class WhatsWord extends Component {
 
                     { this.state.gameStarted && !this.state.gameEnded && ( 
                         <div className="col-12">
-                            <div className="alert alert-info mx-3 my-3" role="alert">                                
+                            <div className="alert alert-dark bg-dark text-light mx-3 my-3" role="alert">                                
                                 <p><strong>Categoria / Dica:</strong> {this.state.category}</p>                                
                                 <p><strong>Tentativas: </strong> {this.state.chances}</p>
                                 <p><strong>Pontos: </strong> {this.state.points}</p>
