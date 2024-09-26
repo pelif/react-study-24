@@ -45,12 +45,12 @@
         }, 
         {
             "id": 5,
-            "name": "Disco Rígido",
+            "name": "Gabinete",
             "categoryId": 1
         }, 
         {
             "id": 6,
-            "name": "Memória RAM",
+            "name": "RAM",
             "categoryId": 1
         }, 
         {
@@ -75,7 +75,7 @@
         },
         {
             "id": 11,
-            "name": "Mega Drive",
+            "name": "Play",
             "categoryId": 2
         }, 
         {
