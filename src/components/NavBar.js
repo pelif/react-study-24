@@ -13,6 +13,8 @@ import Counter from "../pages/Counter";
 import userContext from "../context/UserContext";
 import Components from "../pages/Components";
 import TodoList from "./TodoList";
+import WhatsWord from "./WhatsWord";
+
 
 function NavBarDOM() {
     return (
@@ -54,7 +56,10 @@ function NavBarDOM() {
                         </li> 
                         <li className="nav-item">
                             <NavLink to="/todo" className="nav-link" element={<TodoList />}>Todo List</NavLink>
-                        </li>
+                        </li>  
+                        <li className="nav-item">
+                            <NavLink to="/whatsword" className="nav-link" element={<WhatsWord />}>WhatsWord</NavLink>
+                        </li>                        
                     </ul>
                 </div>
             </div>

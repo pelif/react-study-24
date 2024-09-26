@@ -13,7 +13,7 @@ import DivComponents1 from './components/DivComponents';
 import NavBar from './components/NavBar';
 import Components from './pages/Components';
 import TodoList from './components/TodoList';
-
+import WhatsWord from './components/WhatsWord';
 
 function App() {
   return (
@@ -29,7 +29,8 @@ function App() {
           <Route path="/textarea" element={<Textarea />} />
           <Route path="/counter" element={<Counter />} />          
           <Route path="/componentsStudy" element={<Components />} />          
-          <Route path="/todo" element={<TodoList />} />          
+          <Route path="/todo" element={<TodoList />} />                    
+          <Route path="whatsword" element={<WhatsWord />} />
         </Routes>
       </BrowserRouter>     
     </div>

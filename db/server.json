@@ -1,0 +1,53 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Computação"
+        },
+        {
+            "id": 2,
+            "name": "Games"
+        },
+        {
+            "id": 3,
+            "name": "Carros"
+        }
+    ], 
+    "words": [  
+        {
+            "id": 1,
+            "name": "Mouse",
+            "categoryId": 1
+        },
+        {
+            "id": 2,
+            "name": "Teclado",
+            "categoryId": 1
+        },
+        {
+            "id": 3,
+            "name": "Monitor",
+            "categoryId": 1
+        }, 
+        {
+            "id": 4,
+            "name": "Xbox",
+            "categoryId": 2
+        },
+        {
+            "id": 5,
+            "name": "Playstation",
+            "categoryId": 2
+        },
+        {
+            "id": 6,
+            "name": "Fiat",
+            "categoryId": 3
+        },
+        {
+            "id": 7,
+            "name": "Fusca",
+            "categoryId": 3
+        }
+    ]
+}
