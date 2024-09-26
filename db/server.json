@@ -11,7 +11,16 @@
         {
             "id": 3,
             "name": "Carros"
+        }, 
+        {
+            "id": 4,
+            "name": "Celulares"
+        }, 
+        {
+            "id": 5,
+            "name": "Culinária"
         }
+       
     ], 
     "words": [  
         {
@@ -31,23 +40,108 @@
         }, 
         {
             "id": 4,
+            "name": "Processador",
+            "categoryId": 1
+        }, 
+        {
+            "id": 5,
+            "name": "Disco Rígido",
+            "categoryId": 1
+        }, 
+        {
+            "id": 6,
+            "name": "Memória RAM",
+            "categoryId": 1
+        }, 
+        {
+            "id": 7,
             "name": "Xbox",
             "categoryId": 2
         },
         {
-            "id": 5,
+            "id": 8,
             "name": "Playstation",
             "categoryId": 2
         },
         {
-            "id": 6,
-            "name": "Fiat",
-            "categoryId": 3
+            "id": 9,
+            "name": "Nintendo",
+            "categoryId": 2
         },
         {
-            "id": 7,
+            "id": 10,
+            "name": "Atari",
+            "categoryId": 2
+        },
+        {
+            "id": 11,
+            "name": "Mega Drive",
+            "categoryId": 2
+        }, 
+        {
+            "id": 12,
             "name": "Fusca",
             "categoryId": 3
+        }, 
+        {
+            "id": 13,
+            "name": "Fiat",
+            "categoryId": 3
+        }, 
+        {
+            "id": 14,
+            "name": "Renegade",
+            "categoryId": 3
+        }, 
+        {
+            "id": 15,
+            "name": "Onix",
+            "categoryId": 3
+        }, 
+        {
+            "id": 16,
+            "name": "Iphone",
+            "categoryId": 4
+        }, 
+        {
+            "id": 17,
+            "name": "Samsung",
+            "categoryId": 4
+        }, 
+        {
+            "id": 18,
+            "name": "Xiaomi",
+            "categoryId": 4
+        }, 
+        {
+            "id": 19,
+            "name": "Brigadeiro",
+            "categoryId": 5
+        }, 
+        {
+            "id": 20,
+            "name": "Coxinha",
+            "categoryId": 5
+        }, 
+        {
+            "id": 21,
+            "name": "Hamburguer",
+            "categoryId": 5
+        }, 
+        {
+            "id": 22,
+            "name": "Cuscuz",
+            "categoryId": 5
+        }, 
+        {
+            "id": 23,
+            "name": "Pastel",
+            "categoryId": 5
+        }, 
+        {
+            "id": 24,
+            "name": "Sorvete",
+            "categoryId": 5
         }
     ]
 }
