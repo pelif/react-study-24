@@ -72,7 +72,6 @@ export default class WhatsWord extends Component {
         let position = -1; 
         const positions = []; 
         if(letter.length > 0) {
-
             letter = letter.toLowerCase();
             word = word.toLowerCase();
 
@@ -103,8 +102,7 @@ export default class WhatsWord extends Component {
             }
         }
 
-        this.checkGame();
-        // this.checkWin();
+        this.checkGame();        
     }
 
     checkGame = () => {        
